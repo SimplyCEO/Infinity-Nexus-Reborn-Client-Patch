@@ -83,6 +83,7 @@ Removed content
 
 |   Package                     |   Version           |  Server Side  |  Project ID   |
 |-------------------------------|---------------------|---------------|---------------|
+| Chocapic13' Shaders           |                     |      No       |    367167     |
 | WorldEdit                     | 7.2.5+6463-5ca4dff  |      No       |    225608     |
 
 Note: There are some mods that are either dependencies or mods that create

@@ -1,5 +1,5 @@
 --- extract/modlist.html	2024-07-20 11:26:46.000000000 -0300
-+++ patch/modlist.html	2024-07-23 19:46:09.825030126 -0300
++++ patch/modlist.html	2024-07-23 20:21:30.388346394 -0300
 @@ -14,7 +14,6 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/dark-utilities">Dark Utilities (by DarkhaxDev)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/blocks-you-need">Blocks You Need - Industrial, Steampunk, Laboratory, Space & more! (by lunabups)</a></li>
@@ -42,8 +42,11 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/konkrete">Konkrete [Forge/NeoForge] (by Keksuccino)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/voidscape">Voidscape (by Tamaized)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/blood-magic">Blood Magic  (by WayofTime)</a></li>
-@@ -93,16 +85,13 @@
- <li><a href="https://www.curseforge.com/minecraft/shaders/chocapic13-shaders">Chocapic13' Shaders (by Choca_13)</a></li>
+@@ -90,19 +82,15 @@
+ <li><a href="https://www.curseforge.com/minecraft/shaders/makeup-ultra-fast-shader">MakeUp - Ultra Fast | Shaders (by XavierFST)</a></li>
+ <li><a href="https://www.curseforge.com/minecraft/mc-mods/resourceful-config">Resourceful Config (by ThatGravyBoat)</a></li>
+ <li><a href="https://www.curseforge.com/minecraft/mc-mods/zeta">Zeta (by Vazkii)</a></li>
+-<li><a href="https://www.curseforge.com/minecraft/shaders/chocapic13-shaders">Chocapic13' Shaders (by Choca_13)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/torchmaster">Torchmaster (by xalcon)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/baubley-heart-canisters">Baubley Heart Canisters (by traverse_joe)</a></li>
 -<li><a href="https://www.curseforge.com/minecraft/mc-mods/journeymap">JourneyMap (by techbrew)</a></li>
@@ -59,7 +62,7 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/craterlib">CraterLib (by hypherionsa)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/ensorcellation">Ensorcellation (by TeamCoFH)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized">PneumaticCraft: Repressurized (by desht_08)</a></li>
-@@ -115,7 +104,6 @@
+@@ -115,7 +103,6 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/melody">Melody (by Keksuccino)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/vampirism-become-a-vampire">Vampirism - Become a vampire! (by maxanier)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/time-in-a-bottle-universal">Time in a bottle [FORGE\NEOFORGE\FABRIC] (by MangoRage)</a></li>
@@ -67,7 +70,7 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/forgematica">Forgematica (by TexTrue)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/createaddition">Create Crafts & Additions (by MRHminer)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/flux-networks">Flux Networks (by sonar_sonic)</a></li>
-@@ -126,7 +114,6 @@
+@@ -126,7 +113,6 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/advancement-plaques">Advancement Plaques [Forge] (by Grend_G)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/ftb-xmod-compat">FTB XMod Compat (by FTB)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/kubejs">KubeJS (by LatvianModder)</a></li>
@@ -75,7 +78,7 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/mekanism">Mekanism (by bradyaidanc)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/lets-do-bakery">[Let's Do] Bakery (by satisfy)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/shetiphiancore">ShetiPhianCore (by ShetiPhian)</a></li>
-@@ -134,18 +121,12 @@
+@@ -134,18 +120,12 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/thermal-cultivation">Thermal Cultivation (by TeamCoFH)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/mcjtylib">McJtyLib (by McJty)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/raven-brews-core">Raven Brews Core (by TheWandererRaven)</a></li>
@@ -94,7 +97,7 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/smartbrainlib">SmartBrainLib (Forge/Fabric/Quilt) (by Scimiguy)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/iceberg">Iceberg [Forge] (by Grend_G)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge">FTB Library (Forge) (by FTB)</a></li>
-@@ -157,7 +138,6 @@
+@@ -157,7 +137,6 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/polymorph">Polymorph (Fabric/Forge/Quilt) (by TheIllusiveC4)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/godly-vampirism">Godly Vampirism (by maxanier)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/shaders/sildurs-vibrant-shaders">Sildur's Vibrant shaders (by SildurFX)</a></li>
@@ -102,7 +105,7 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/iron-chests">Iron Chests (by ProgWML6)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/mekanism-additions">Mekanism Additions (by bradyaidanc)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/elemental-craft">Elemental Craft (by Sirttas)</a></li>
-@@ -168,7 +148,6 @@
+@@ -168,7 +147,6 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/thermal-integration">Thermal Integration (by TeamCoFH)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/factory-api">Factory API (by Wilyicaro)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/guide-api-village-and-pillage">Guide-API Village and Pillage (by maxanier)</a></li>
@@ -110,7 +113,7 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/cupboard">Cupboard (by someaddon)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/brandons-core">Brandon's Core (by brandon3055)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/apothic-attributes">Apothic Attributes (AttributesLib) (by Shadows_of_Fire)</a></li>
-@@ -176,21 +155,18 @@
+@@ -176,21 +154,18 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/touhou-little-maid">Touhou Little Maid (by TartaricAcid)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/mobile-trashcan">Mobile Trashcan (by patcraft122)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/chipped">Chipped (by terrariumearth)</a></li>
@@ -132,7 +135,7 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/artifacts">Artifacts (by ochotonida)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/inventory-sorter">Inventory Sorter (by cpw)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/citadel">Citadel (by sbom_xela)</a></li>
-@@ -230,15 +206,12 @@
+@@ -230,15 +205,12 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/infinity-nexus">Infinity Nexus Resouces (by Reavik)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/entangled">Entangled (by SuperMartijn642)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/pig-pen-cipher">Pig Pen Cipher (by DarkhaxDev)</a></li>
@@ -148,7 +151,7 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/create">Create (by simibubi)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/deuf-duplicate-entity-uuid-fix">DEUF - Duplicate Entity UUID Fix (by CAS_ual_TY)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/additional-lights">Additional Lights (by mgen256)</a></li>
-@@ -246,24 +219,19 @@
+@@ -246,24 +218,19 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/cofh-core">CoFH Core (by TeamCoFH)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/simply-light">Simply Light (by Flanks255)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/polymorphic-energistics">Polymorphic Energistics (by ninety)</a></li>
@@ -173,7 +176,7 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks">Sophisticated Backpacks (by P3pp3rF1y)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/smooth-boot-reloaded">Smooth Boot (Reloaded) (by AbdElAziz333)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/findme">FindMe (by Buuz135)</a></li>
-@@ -271,13 +239,10 @@
+@@ -271,13 +238,10 @@
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/rftools-utility">RFTools Utility (by McJty)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/valhelsia-core">Valhelsia Core (by ValhelsiaTeam)</a></li>
  <li><a href="https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge">FTB Ultimine (Forge) (by FTB)</a></li>

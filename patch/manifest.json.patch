@@ -1,13 +1,14 @@
 --- extract/manifest.json	2024-07-20 11:26:46.000000000 -0300
-+++ patch/manifest.json	2024-07-23 19:50:14.001694828 -0300
-@@ -10,1435 +10,259 @@
++++ patch/manifest.json	2024-07-23 20:30:58.015008494 -0300
+@@ -10,1435 +10,258 @@
    },
    "manifestType": "minecraftModpack",
    "manifestVersion": 1,
 -  "name": "Infinity Nexus Reborn (Server)",
 +  "name": "Infinity Nexus: Reborn (Client) [Essentials Lite Patch]",
    "version": "1.8",
-   "author": "",
+-  "author": "",
++  "author": "Player_rs (Owner), Reavik (Author), SimplyCEO (Patcher)",
    "files": [
 -    {
 -      "projectID": 858542,
@@ -1516,7 +1517,6 @@
 +    { "projectID": 431203, "fileID": 5394067, "required": true },
 +    { "projectID": 714059, "fileID": 5020441, "required": true },
 +    { "projectID": 968868, "fileID": 5254672, "required": true },
-+    { "projectID": 367167, "fileID": 3059792, "required": true },
 +    { "projectID": 254268, "fileID": 5264637, "required": true },
 +    { "projectID": 282947, "fileID": 4786762, "required": true },
 +    { "projectID": 402924, "fileID": 4850872, "required": true },
