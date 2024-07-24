@@ -1,7 +1,7 @@
-Infinity Nexus: Reborn 1.8 Essentials Lite
-==========================================
+Infinity Nexus: Reborn 1.8 Client Patch
+=======================================
 
-This is a patched version for `Infinity Nexus: Reborn` version `1.8` that removes "performance" mods and tweaks,
+This is a patched version for `Infinity Nexus: Reborn` modpack that removes performance, tweak and extra mods,
 that might not be desirable for some users.
 
 Requirements
@@ -17,16 +17,42 @@ Requirements
   Recommended, but not needed.
 
 - Memory:<br>
-  Minimum required is 4096 MiB (~4.29 GB).<br>
-  Can be downscaled to 2048 MiB (~2.14 GB), but will impact on loading time.<br>
-  Recommended is 6144 MiB (~6.44 GB) or above since registered objects reach around this limit.
+  Minimum required is `4096 MiB` (~4.29 GB).<br>
+  Can be downscaled to `2048 MiB` (~2.14 GB), but will impact on loading time.<br>
+  Recommended is `6144 MiB` (~6.44 GB) or above since registered objects reach around this limit.
 
 - HDD space:<br>
-  Around 615 MiB or 650 MB.
+  `~615 MiB` or `~650 MB`.
 
 - Optional JVM arguments:
-  `-XX:+TieredCompilation -XX:+OptimizeStringConcat -XX:+UseCompressedOops -XX:ParallelGCThreads=4 -XX:CICompilerCount=2`<br>
-  `-Dorg.lwjgl.openal.libname=/lib/libopenal.so` can be used on Unix only systems, to use the latest OpenAL version. It will fix a crash in `Sound Physics Remastered` if provided.
+  | Argument                                        | Description                                                                                                                                           |
+  |-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | -XX:+OptimizeStringConcat                       | Enables the JVM's optimized string concatenation algorithm.                                                                                           |
+  | -XX:+TieredCompilation                          | Enables tiered compilation, which compiles methods in a series of stages to improve startup time and compilation time.                                |
+  | -XX:+UseBiasedLocking                           | Enables biased locking to improve performance on some systems by reducing the overhead of synchronization. (deprecated since Java 15.0)               |
+  | -XX:+UseCompressedOops                          | Enables compressed object references to reduce memory footprint and improve performance.                                                              |
+  | -XX:+UseG1GC                                    | Enables the G1 garbage collector for improved throughput and reduced pauses.                                                                          |
+  | -XX:CICompilerCount=`count`                     | Sets the number of compiler threads used by the client compiler.                                                                                      |
+  | -XX:MaxGCPauseMillis=`time`                     | Sets the maximum pause time for garbage collections to improve performance by reducing the impact of garbage collections on application performance.  |
+  | -XX:ParallelGCThreads=`threads`                 | Sets the number of threads used by the parallel garbage collector.                                                                                    |
+  | -Xmn`size`                                      | Sets the size of the young generation in the JVM to improve performance by reducing the frequency of garbage collections.                             |
+  | -Dsun.java2d.darwin.dashedLines                 | Disables the use of dashed lines in Java 2D on macOS.                                                                                                 |
+  | -Dsun.java2d.opengl=`boolean`                   | Enables the use of OpenGL for rendering in Java 2D.                                                                                                   |
+  | -DALLOW_THREAD_PRIORITY_MANIPULATION=`boolean`  | Allows thread priority manipulation in Java.                                                                                                          |
+  | -Dj3d.validation=`boolean`                      | Enables 3D validation in Java 3D.                                                                                                                     |
+  | -Dcom.sun.media.doox11.no32bits-`boolean`       | Disables the use of 32-bit media components in Java.                                                                                                  |
+  | -Dcom.sun.media.doox11.forced64bits=`boolean`   | Forces the use of 64-bit media components in Java.                                                                                                    |
+  | -Dcom.sun.media.doox11.useMixer=`boolean`       | Allows the use of the audio mixer in Java.                                                                                                            |
+  | -DdisableAnimations=`boolean`                   | Disable animations for all objects in Minecraft.                                                                                                      |
+  | -d64                                            | Forces the JVM to run in 64-bit mode for better performance on 64-bit systems.                                                                        |
+  | -server                                         | Enables the server JVM for improved performance in long-running server applications.                                                                  |
+  | -Dorg.lwjgl.opengl.libname=`path/to/lib`        | Sets the location of the OpenGL library for LWJGL. (Unix systems only)                                                                                |
+  | -Dorg.lwjgl.openal.libname=`path/to/lib`        | Sets the location of the OpenAL library for LWJGL. (Unix systems only)                                                                                |
+  ```shell
+  -XX:+OptimizeStringConcat -XX:+TieredCompilation -XX:+UseBiasedLocking -XX:+UseCompressedOops -XX:+UseG1GC -XX:CICompilerCount=2 -XX:MaxGCPauseMillis=300 -XX:ParallelGCThreads=4 -Dsun.java2d.opengl=true -DALLOW_THREAD_PRIORITY_MANIPULATION=true -Dj3d.validation=false -Dcom.sun.media.doox11.no32bits=true -Dcom.sun.media.doox11.forced64bits=true -Dcom.sun.media.doox11.useMixer=false -DdisableAnimations=true -server -Dorg.lwjgl.opengl.libname=/lib/libGL.so -Dorg.lwjgl.openal.libname=/lib/libopenal.so
+  ```
+  Setting OpenAL to use the latest version will fix a crash in `Sound Physics Remastered`.<br>
+  It is normal to the JVM lag at first because of the so many flags that are set on. It will boost the performance in overrall, in conjunction with performance mods suited for each user's device.
 
 Note: This modpack can be downloaded using `MultiMC`, `PolyMC`, `PrismLauncher`, `ShadyLauncher`
 or whatever launcher apart from `CurseForge App` one that support ZIP loading `CurseForge API`.
