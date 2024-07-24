@@ -89,3 +89,11 @@ Removed content
 Note: There are some mods that are either dependencies or mods that create
 a unique UI for the modpack such as: `Embeddium`, `Player Animator`, `FancyMenu` and `Drippy Loading Screen`.
 
+Build
+-----
+
+Patch version: v0.1.
+
+```shell
+bash ./build.sh
+```
