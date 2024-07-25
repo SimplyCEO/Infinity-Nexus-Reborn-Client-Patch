@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Patch version: v0.1
+# Patch version: v0.1.1
 
 # Set initial variables
 ROOT_REPOSITORY=$(pwd)
@@ -10,25 +10,36 @@ BUILD="build"
 MANIFEST="manifest.json"
 MODLIST="modlist.html"
 
+# Modpack variables
+printf "Downloading modpack...\n" && sleep 1
+MURL="https://www.curseforge.com/api/v1/mods/1006904/files/5564809/download"
+MNAME="Infinity Nexus: Reborn"
+MVERSION="1.8.1 - Light"
+
 # Get the Infinity Nexus: Reborn modpack
-MODPACK_URL="https://www.curseforge.com/api/v1/mods/1006904/files/5548729/download"
-MODPACK_NAME="INR_Server-1.8.zip"
-PATCHED_MODPACK_NAME="Infinity Nexus: Reborn [Essentials Lite] 1.8 (Client)"
-curl -L "${MODPACK_URL}" --output "${MODPACK_NAME}"
+curl -L "${MURL}" --output "${MNAME} ${MVERSION}.zip"
 
 # Extract modpack to 'extract' folder
-unzip "${MODPACK_NAME}" -d "${ROOT_REPOSITORY}/${EXTRACT}"
+printf "Extracting modpack...\n" && sleep 1
+mkdir -p "${ROOT_REPOSITORY}/${EXTRACT}"
+unzip "${MNAME} ${MVERSION}.zip" -d "${ROOT_REPOSITORY}/${EXTRACT}"
 
 # Patch existing files
+printf "Patching files...\n" && sleep 1
 patch "${ROOT_REPOSITORY}/${EXTRACT}/${MANIFEST}" < "${ROOT_REPOSITORY}/${PATCH}/${MANIFEST}.patch"
 patch "${ROOT_REPOSITORY}/${EXTRACT}/${MODLIST}" < "${ROOT_REPOSITORY}/${PATCH}/${MODLIST}.patch"
 
 # Zip files
-cd "${ROOT_REPOSITORY}/${EXTRACT}" && zip -rq "${PATCHED_MODPACK_NAME}.zip" ${ROOT_REPOSITORY}/* && cd ..
+printf "Preparing patched modpack...\n" && sleep 1
+MVERSION="1.8.1 [Essentials Lite Patch]"
+cd "${ROOT_REPOSITORY}/${EXTRACT}" && zip -rq "${MNAME} ${MVERSION}.zip" ${ROOT_REPOSITORY}/* && cd ..
 
 # Move patched version to 'build'
 mkdir -p ${ROOT_REPOSITORY}/${BUILD}
-mv "${ROOT_REPOSITORY}/${EXTRACT}/${PATCHED_MODPACK_NAME}.zip" "${ROOT_REPOSITORY}/${BUILD}"
+mv "${ROOT_REPOSITORY}/${EXTRACT}/${MNAME} ${MVERSION}.zip" "${ROOT_REPOSITORY}/${BUILD}"
 
 # Generate hash for built file
-sha256sum "${ROOT_REPOSITORY}/${BUILD}/${PATCHED_MODPACK_NAME}.zip" | cut -d' ' -f1 > "${ROOT_REPOSITORY}/${BUILD}/${PATCHED_MODPACK_NAME}.sha256"
+printf "Patched modpack prepared. Signing...\n" && sleep 1
+sha256sum "${ROOT_REPOSITORY}/${BUILD}/${MNAME} ${MVERSION}.zip" | cut -d' ' -f1 > "${ROOT_REPOSITORY}/${BUILD}/${MNAME} ${MVERSION}.sha256"
+
+printf "Modpack signed and ready to be used.\n"
